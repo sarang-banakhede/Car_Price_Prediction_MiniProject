@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Car Price Pridiction</title>
+        <style>
+            body
+            {
+             background-image: url({{ url_for('static', filename='images/Car.jpg') }});
+             background-repeat : no-repeat;
+             background-size : cover; 
+             color : azure;
+            }
+        </style>
+    </head>
+    <body class="body">
+        <fieldset style="background-color: rgba(136, 125, 125, 0.174); border:0cqmax;border-radius: 50px;margin: 0 auto;width: 75%;"> 
+            <legend style="text-align:center;font-size: 30px;font-family:Arial;"><B><h3 style="color: azure;text-shadow: 2px 2px #4e6060"><u>Price Pridiction</u></h3></Car></B></legend>
+        <form method="POST" action="/predict">
+            <fieldset style="width: 70%;margin-left:13%;">
+             <div style="width: 50%; float: left;">
+             <label for="Brand" >Brand Name : </label>
+             <select id="Brand" name="Brand" style="width: 120px;background-color:rgb(186, 194, 242);">
+                 <option value="0" selected>Brand_Audi</option>
+                 <option value="1">Brand_BMW</option>
+                 <option value="2">Brand_Fiat</option>
+                 <option value="3">Brand_Ford</option>
+                 <option value="4">Brand_Honda</option>
+                 <option value="5">Brand_Hyundai</option>
+                 <option value="6">Brand_Jaguar</option>
+                 <option value="7">Brand_Land</option>
+                 <option value="8">Brand_Mahindra</option>
+                 <option value="9">Brand_Maruti</option>
+                 <option value="10">Brand_Mercedes-Benz</option>
+                 <option value="11">Brand_Mitsubishi</option>
+                 <option value="12">Brand_Nissan</option>
+                 <option value="13">Brand_Renault</option>
+                 <option value="14">Brand_Skoda</option>
+                 <option value="15">Brand_Tata</option>
+                 <option value="16">Brand_Toyota</option>
+                 <option value="17">Brand_Volkswagen</option>
+                 <option value="18">Brand_Volvo</option>
+                 <option value="19">Brand_Jeep</option>
+             </select>  
+                <br><br>
+
+
+
+             <label for="Fuel_Type">Fuel Type : </label>
+              &nbsp;
+             <input type="radio" name="Fuel_Type" value="0" checked>Diesel</input>
+              &nbsp;
+             <input type="radio" name="Fuel_Type" value="1">Petrol</input>
+             &nbsp;
+             <input type="radio" name="Fuel_Type" value="2">CNG</input>
+             <br><br>
+
+
+
+             <label for="Transmission_Type">Transmission Type : </label>
+             &nbsp;
+             <input type="radio" name="Transmission_Type" value="0" checked>Manual</input>
+             &nbsp;
+             <input type="radio" name="Transmission_Type" value="1" >Automatic</input>
+             <br><br>
+
+
+
+             <label for="Body_Type">Body Type : </label>
+             <select id="Body_Type" name="Body_Type" style="background-color: rgb(186, 194, 242);">
+                 <option value="0" selected>Convertible</option>
+                 <option value="1">Coupe</option>
+                 <option value="2">Hatchback</option>
+                 <option value="3">Minivan</option>
+                 <option value="4">Pickup Truck</option>
+                 <option value="5">SUV</option>
+                 <option value="6">Sedan</option>
+                 <option value="7">MUV</option>
+             </select>
+             <br><br>
+
+
+
+             <label for="Mileage">ARAI Mileage : </label>
+             &nbsp;
+             <input type="number" name="Mileage" style="background-color: rgb(186,194,242); width: 100px;">  
+             <label for="Mileage">Km/L</label>
+             <br><br>
+
+
+             <label for="Displacement" >Engine Displacement : </label>
+             &nbsp;
+             <input type="number" name="Displacement" style="background-color: rgb(186,194,242); width: 100px;">  
+             <label for="Displacement">CC</label>
+             <br><br>
+             
+             </div>
+             <div style="width: 40%;float: right;">
+
+             <label for="cylinder">No. of cylinder : </label>
+             &nbsp;
+             <input type="number" name="cylinder" style="background-color: rgb(186,194,242); width: 100px;">  
+             <br><br>
+
+
+             <label for="Power">Max Power : </label>
+             &nbsp;
+             <input type="number" name="Power" style="background-color: rgb(186,194,242); width: 100px;">  
+             <label for="Power">kW</label>
+             <br><br>
+
+
+             <label for="Torque">Max Torque : </label>
+             &nbsp;
+             <input type="number" name="Torque" style="background-color: rgb(186,194,242); width: 100px;">  
+             <label for="Torque">Nm</label>
+             <br><br>
+
+
+            
+             <label for="seating_capacity">Seating Capacity : </label>
+             &nbsp;
+             <input type="number" name="seating_capacity" style="background-color: rgb(186,194,242); width: 100px;">  
+             <br><br>
+
+
+             <label for="Fuel_capacity">Fuel Tank Capacity : </label>
+             &nbsp;
+             <input type="number" name="Fuel_capacity" style="background-color: rgb(186,194,242); width: 100px;">  
+             <label for="Fuel_capacity">L</label>
+             <br><br>
+
+
+
+             <label for="Ground">Ground Clearance : </label>
+             &nbsp;
+             <input type="number" name="Ground" style="background-color: rgb(186,194,242); width: 100px;">  
+             <label for="Ground">mm</label>
+             <br><br>
+             </div>
+            </fieldset>
+
+             <fieldset style="border-radius: 50px;width: 50%;margin: 0 25%;">      
+             <legend>Other Acessories</legend>
+                <div class="checkbox" style="width: 50%;height: 100%;float: left;">
+                <input type="checkbox" name="v1" value=1 checked>Power Steering<br>      
+                <input type="checkbox" name="v2" value=1 checked>Power Windows Front<br>      
+                <input type="checkbox" name="v3" value=1 checked>Anti Lock Braking System<br>  
+                <input type="checkbox" name="v4" value=1 checked>Air Conditioner<br>      
+                <input type="checkbox" name="v5" value=1 checked>Driver Airbag<br> 
+                </div> 
+                <div class="checkbox" style="width: 50%;height: 100%;float: right;">    
+                <input type="checkbox" name="v6" value=1 checked>Passenger Airbag<br>
+                <input type="checkbox" name="v7" value=1 checked>Automatic Climate Control<br>      
+                <input type="checkbox" name="v8" value=1 checked>Fog Lights<br>      
+                <input type="checkbox" name="v9" value=1 checked>Alloy Wheels<br>
+                </div> 
+            </div>
+             </select>
+             </fieldset>  
+             <button type="submit" style="background-color: rgba(67, 70, 67, 0.086);width: 10%;margin-left: 45%;margin-right: 45%;color: azure;"><p>Predict Price</p></button></button>
+             <h2 style="text-align: center;">₹{{predict}}/-</h2>
+        </form>
+        </fieldset>  
+    </body>
+
+</html>

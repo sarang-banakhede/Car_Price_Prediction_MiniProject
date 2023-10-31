@@ -1,0 +1,13 @@
+scikit-learn
+pandas
+numpy
+seaborn
+matplotlib
+tensorflow
+keras
+beautifulsoup4
+Flask
+pickle5
+requests
+ipykernel
+keras-tuner
