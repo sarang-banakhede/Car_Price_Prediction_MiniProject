@@ -17,3 +17,10 @@ Several models are developed to predict car prices based on the available featur
 The model with the highest accuracy is selected for deployment. To provide a seamless user experience, a frontend web page is designed and implemented. This interface allows users to input car specifications and receive predicted prices based on the deployed model. The model is integrated into a Flask web application, ensuring efficient deployment and smooth interaction with the users.
 
 Overall, this project demonstrates a comprehensive pipeline from data collection through web scraping to data cleaning, feature engineering, model development, and model deployment through a user-friendly web interface. Its primary objective is to enable users to accurately predict car prices based on various features, aiding car buyers, sellers, and automotive enthusiasts in making informed decisions.
+
+
+step to run:
+-> make virtual enviurnment (python -m venv {name of your enviournment} )
+-> activate the virtual enviournment ({name of your enviournment}\Scripts\activate)
+-> install Required pakages (python setup.py)
+-> run the application (python app.py)
