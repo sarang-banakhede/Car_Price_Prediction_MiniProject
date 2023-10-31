@@ -1,4 +1,4 @@
---------------------------------------------------------------------- MINI PROJECT -----------------------------------------------------------------------
+# MINI PROJECT 
 
 ## Project Description: Car Price Prediction Model Development and Deployment
 
