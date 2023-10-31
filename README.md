@@ -18,10 +18,22 @@ The model with the highest accuracy is selected for deployment. To provide a sea
 
 Overall, this project demonstrates a comprehensive pipeline from data collection through web scraping to data cleaning, feature engineering, model development, and model deployment through a user-friendly web interface. Its primary objective is to enable users to accurately predict car prices based on various features, aiding car buyers, sellers, and automotive enthusiasts in making informed decisions.
 
+### Getting Started
+To run the deployed application locally:
 
-step to run:
+1) Clone this repository to your local machine.
+2) Make virtual enviurnment (python -m venv {name of your enviournment})
+3) Activate the virtual enviournment ({name of your enviournment}\Scripts\activate)
+4) Install Required dependencies (python setup.py)
+5) Run the Flask application (python app.py)
+6) Access the application in your web browser at `http://127.0.0.1:5000`.
 
-1) make virtual enviurnment (python -m venv {name of your enviournment})
-2) activate the virtual enviournment ({name of your enviournment}\Scripts\activate)
-3) install Required pakages (python setup.py)
-4) run the application (python app.py)
+## Contribution
+If you would like to contribute to this project, you can:
+
+- Improve the model's performance by experimenting with hyperparameters.
+- Expand the dataset or implement data augmentation techniques.
+- Enhance the user interface of the Flask application.
+- Refactor and optimize the codebase for better maintainability.
+
+Feel free to fork this repository, make changes, and submit pull requests.
