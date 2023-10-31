@@ -20,7 +20,8 @@ Overall, this project demonstrates a comprehensive pipeline from data collection
 
 
 step to run:
--> make virtual enviurnment (python -m venv {name of your enviournment} )
--> activate the virtual enviournment ({name of your enviournment}\Scripts\activate)
--> install Required pakages (python setup.py)
--> run the application (python app.py)
+
+1) make virtual enviurnment (python -m venv {name of your enviournment})
+2) activate the virtual enviournment ({name of your enviournment}\Scripts\activate)
+3) install Required pakages (python setup.py)
+4) run the application (python app.py)
