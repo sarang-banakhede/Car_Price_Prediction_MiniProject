@@ -22,8 +22,8 @@ Overall, this project demonstrates a comprehensive pipeline from data collection
 To run the deployed application locally:
 
 1) Clone this repository to your local machine.
-2) Make virtual enviurnment (python -m venv {name of your enviournment})
-3) Activate the virtual enviournment ({name of your enviournment}\Scripts\activate)
+2) Make virtual enviurnment (python -m venv env)
+3) Activate the virtual enviournment (env\Scripts\activate)
 4) Install Required dependencies (python setup.py)
 5) Run the Flask application (python app.py)
 6) Access the application in your web browser at `http://127.0.0.1:5000`.
