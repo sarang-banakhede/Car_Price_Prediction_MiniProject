@@ -4,7 +4,7 @@ import pickle
 
 app=Flask(__name__)
 
-model=pickle.load(open('Artifacts\model2.pkl','rb'))
+model=pickle.load(open('Artifacts\model.pkl','rb'))
 scaler=pickle.load(open('Artifacts\scaler.pkl','rb'))
 
 @app.route("/")
