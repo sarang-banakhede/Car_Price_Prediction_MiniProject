@@ -2,7 +2,7 @@ import subprocess
 
 requirement_path = 'requirement.txt'
 
-venv_activation='myenv\\Scripts\\activate'
+venv_activation='env\\Scripts\\activate'
 
 
 requirements = []
