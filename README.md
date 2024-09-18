@@ -1,6 +1,7 @@
 # MINI PROJECT 
 
 ## Project Description: Car Price Prediction Model Development and Deployment
+(see demo :- https://www.linkedin.com/posts/sarang-banakhede-79327823a_machinelearning-datascience-webscraping-activity-7078074670146535424-eUe9?utm_source=share&utm_medium=member_desktop )
 
 This project focuses on developing a car price prediction model using data collected from cardekho.com through web scraping techniques. The collected data undergoes thorough data cleaning and feature engineering processes. Multiple models are constructed and evaluated, and the one with the highest accuracy is selected for deployment. Additionally, a frontend web page is created to provide a user-friendly interface, and the model is deployed using Flask.
 
